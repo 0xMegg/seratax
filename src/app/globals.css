@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --header-height: 4rem; /* Header 높이 (py-2 + 로고 높이) */
+  --footer-height: 12rem; /* Footer 높이 (py-8 + 내용물) */
 }
 
 @theme inline {
