@@ -4,8 +4,8 @@ import React from "react";
 
 export default function TrcfirmPage() {
   return (
-    <div className="w-full h-full flex flex-col">
-      <div className="flex-1 w-full">
+    <div className="w-full h-screen flex flex-col">
+      <div className="flex-1 w-full min-h-0">
         <iframe
           src="https://solution.trcfirm.co.kr/?managerID=01260"
           className="w-full h-full border-0"
