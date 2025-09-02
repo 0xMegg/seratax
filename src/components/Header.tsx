@@ -6,18 +6,14 @@ import { useRouter } from "next/navigation";
 export default function Header() {
   const router = useRouter();
 
-  const handleTrcfirmClick = () => {
-    router.push("/trcfirm");
-  };
-
   const handleLogoClick = () => {
     router.push("/");
   };
 
   return (
-    <header className="w-full bg-white shadow-sm border-b border-gray-200">
-      <div className="container mx-auto px-4 py-2 flex justify-between items-center">
-        <div className="flex items-center">
+    <header className="w-full shadow-sm border-b border-gray-200">
+      <div className="h-full w-[1160px] mx-auto px-4 py-2 flex justify-between items-center">
+        <div className="flex items-center gap-8">
           <Image
             src="/logo_row.png"
             alt="세라 세무회계 로고"
@@ -27,14 +23,11 @@ export default function Header() {
             priority
             onClick={handleLogoClick}
           />
+          <button>TRCFIRM</button>
         </div>
-        <div className="flex items-center gap-4 bg-gray-100 rounded-full px-4 py-2">
-          <button
-            className="text-sm hover:bg-gray-200 transition-colors cursor-pointer"
-            onClick={handleTrcfirmClick}
-          >
-            TRCFIRM
-          </button>
+        <div className="flex items-center gap-8">
+          <span className="text-gray-500">경정어쩌구</span>
+          <span className="text-gray-500">청구어쩌구</span>
         </div>
       </div>
     </header>
